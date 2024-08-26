@@ -12,6 +12,16 @@ class Jextract < Formula
       sha256 "0f65d480a1713d73c179e91f3ab6b9553c22694cd1a9f7936ffa8ca351d12390"
     end
   end
+  on_linux do
+    on_arm do
+      url "https://download.java.net/java/early_access/jextract/22/5/openjdk-22-jextract+5-33_linux-x64_bin.tar.gz"
+      sha256 "53d66299cda8d079aeff42b2cc765314e44b384f3e0ec2a7eb994bae62b4b728"
+    end
+    on_intel do
+      url "https://download.java.net/java/early_access/jextract/22/5/openjdk-22-jextract+5-33_linux-x64_bin.tar.gz"
+      sha256 "53d66299cda8d079aeff42b2cc765314e44b384f3e0ec2a7eb994bae62b4b728"
+    end
+  end
 
   def install
     libexec.install Dir["*"]

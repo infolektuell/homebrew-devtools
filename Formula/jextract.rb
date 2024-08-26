@@ -1,8 +1,7 @@
 class Jextract < Formula
-  desc "Jextract mechanically generates Java bindings from native library headers."
+  desc "Mechanically generates Java bindings from native library headers"
   homepage "https://jdk.java.net/jextract/"
-  version "22"
-  license "gplv2+ce"
+  license "GPL-2.0-with-classpath-exception"
   on_macos do
     on_arm do
       url "https://download.java.net/java/early_access/jextract/22/5/openjdk-22-jextract+5-33_macos-aarch64_bin.tar.gz"
